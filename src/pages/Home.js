@@ -17,6 +17,7 @@ export default function Home() {
 
   const loadEmpresas = async () => {
     const result = await axios.get("http://localhost:8080/empresas");
+    console.log("empresas: ",result);
     setEmpresas(result.data);
   };
 
@@ -27,7 +28,7 @@ export default function Home() {
 
   const loadTrabajadores = async () => {
     const resulttra = await axios.get("http://localhost:8080/trabajadores");
-    console.log(resulttra);
+    console.log("trabajadores: ",resulttra);
     setTrabajadores(resulttra.data);
   };
 

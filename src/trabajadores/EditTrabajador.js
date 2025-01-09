@@ -118,7 +118,7 @@ export default function EditTrabajador() {
                 className="form-control"
                 placeholder="Ingrese Empresa"
                 name="empresa"
-                value={empresa}
+                value={empresa.razonSocial}
                 onChange={(e) => onInputChange(e)}
               />
             </div>
