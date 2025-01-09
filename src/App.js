@@ -22,8 +22,8 @@ function App() {
           <Route exact path="/editempresa/:id" element={<EditEmpresa />} />
           <Route exact path="/viewempresa/:id" element={<ViewEmpresa />} />
           <Route exact path="/addtrabajador" element={<AddTrabajador />} />
-         {/* <Route exact path="/eddittrabajador/:id" element={<EditTrabajador />} />
-          <Route exact path="/viewtrabajador/:id" element={<ViewTrabajador />} /> */}
+          <Route exact path="/edittrabajador/:id" element={<EditTrabajador />} />
+          <Route exact path="/viewtrabajador/:id" element={<ViewTrabajador />} /> 
    
         </Routes>
       </Router>

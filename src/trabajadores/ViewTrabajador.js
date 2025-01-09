@@ -20,8 +20,10 @@ export default function ViewTrabajador() {
 
   const loadTrabajador = async () => {
     const result = await axios.get(`http://localhost:8080/trabajador/${id}`);
+    console.log(result);
     setTrabajador(result.data);
   };
+
 
   return (
     <div className="container">
@@ -55,7 +57,7 @@ export default function ViewTrabajador() {
                 </li>
                 <li className="list-group-item">
                   <b>Empresa:</b>
-                  {trabajador.empresa}
+                  {trabajador.empresa.razonSocial}
                 </li>
               </ul>
             </div>

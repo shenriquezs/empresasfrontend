@@ -6,7 +6,7 @@ export default function EditTrabajador() {
   let navigate = useNavigate();
 
   const { id } = useParams();
-
+ console.log("llego");
   const [trabajador, setTrabajador] = useState({
     rut: "",
     nombre: "",
